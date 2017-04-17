@@ -86,7 +86,7 @@ class NaiveBayesClassifier(object):
 
         el = -np.dot(np.dot(np.transpose(diffs), inv_cov_matrix), diffs)/2
         exp = math.exp(el)
-        div = math.sqrt(2*math.pi*det)
+        div = math.pow(2*math.pi, len(values)/2)*math.sqrt(det)
 
         return (1/div)*exp
 
