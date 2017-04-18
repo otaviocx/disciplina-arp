@@ -36,4 +36,44 @@ A Figura 1 apresenta os valores reais presentes na amostra (em azul), a regress�
 
 **Figura 1** Regressões construídas para a base de dados "Risco de ataque cardíaco".
 
+___
+
+*3) Qual o coeficiente de correlação entre cada uma das variáveis com o preço de apartamento? Qual a variável mais importante para explicar o preço de apartamento? Justifique sua resposta.*
+
+###### Resposta Q3:
+
+Os coeficientes de correlação foram calculados utilizando Excel. Os cálculos estão na planilha `apartamentos.xlsx`.
+
+| coeficientes de correlação |
+--- | ---	
+(P) x (T)   |	0,603104
+(P) x (IP)  |	-0,378349
+(P) x (A)   |	0,281342
+(P) x (NQ)  |	0,462967
+(P) x (VG)  |	0,415587
+
+*preco (P); tamanho (T); idade do predio (IP); andar (A); numero de quartos (NQ); vagas garagem (VG)*
+
+A variável mais importante para explicar o preço de um apartamento é o tamanho. Isso se dá visto que ele é o que possui o maior coeficiente de correlação com o preço. Ou seja, a variável tamanho é a que está mais relacionada com a variável preço.
+___
+
+*4) O banco de dados contém informações de 40 apartamentos vendidos no mês passado.  Cada linha do banco de dados é um apartamento.  Ajuste o seguinte modelo de regressão múltipla para os dados:*
+
+ *Y=b0+b1x1+b2x2+b3x3+erro, em que:*
+ *Y=preço do apartamento; X1=tamanho do apartamento, em metros quadrados; X2=idade do prédio, em anos;X3=andar em que o apartamento está.*
+ *Obs.: Note que não usaremos todas as variáveis independentes.*
+ *Qual é o preço previsto de um imóvel com 80m2, 10 anos e que está no 9º andar?*
+
+###### Resposta Q4:
+
+Os cálculos para resolução dessa questão foram realizados em Python no script `apartamentos.py`. O valor do imóvel considerando apenas as variáveis acima é de R$ 803.396,11.
+___
+
+*5) Ajuste o modelo de regressão múltipla fazendo uso de todas as variáveis. Qual deve ser o preço de um imóvel com 100m2, 3 anos, andar de número 5, 3 quartos e 2 vagas de garagem?*
+
+###### Resposta Q5:
+
+Os cálculos para resolução dessa questão foram realizados em Python no script `apartamentos.py`. O valor do imóvel considerando apenas as variáveis acima é de R$ 1.030.691,91.
+
+___
 
