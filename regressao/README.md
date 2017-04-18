@@ -44,7 +44,7 @@ ___
 
 Os coeficientes de correlação foram calculados utilizando Excel. Os cálculos estão na planilha `apartamentos.xlsx`.
 
-| coeficientes de correlação |
+coeficientes | correlação
 --- | ---	
 (P) x (T)   |	0,603104
 (P) x (IP)  |	-0,378349
@@ -59,10 +59,13 @@ ___
 
 *4) O banco de dados contém informações de 40 apartamentos vendidos no mês passado.  Cada linha do banco de dados é um apartamento.  Ajuste o seguinte modelo de regressão múltipla para os dados:*
 
- *Y=b0+b1x1+b2x2+b3x3+erro, em que:*
- *Y=preço do apartamento; X1=tamanho do apartamento, em metros quadrados; X2=idade do prédio, em anos;X3=andar em que o apartamento está.*
- *Obs.: Note que não usaremos todas as variáveis independentes.*
- *Qual é o preço previsto de um imóvel com 80m2, 10 anos e que está no 9º andar?*
+*Y=b0+b1x1+b2x2+b3x3+erro, em que:*
+
+*Y=preço do apartamento; X1=tamanho do apartamento, em metros quadrados; X2=idade do prédio, em anos;X3=andar em que o apartamento está.*
+
+*Obs.: Note que não usaremos todas as variáveis independentes.*
+
+*Qual é o preço previsto de um imóvel com 80m2, 10 anos e que está no 9º andar?*
 
 ###### Resposta Q4:
 
