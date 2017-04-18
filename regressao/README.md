@@ -125,5 +125,3 @@ ___
 Em aprendizagem supervisionada existem dois tipos de problemas: regressão e classificação. A regressão é um tipo de problema cujo propósito é identificar um padrão para previsão em uma variável dependente cujos valores sejam contínuos ou discretos mas que possuam ordem (variável ordinal). A este tipo de problema a regressão linear é aplicada. Qualquer variável que se deseja predizer e que não dá a ideia de classe e sim de grandeza, pode ser prevista utilizando regressão linear. Por exemplo: tamanho, valor, temperatura, etc. Os problemas que envolvem regressão logística são aqueles cujo propósito é a classificação. Ou seja, a variável dependente é discreta e não possue ordem (variável nominal). Neste tipo de problema a proposta e predizer a classe de um determinado indivíduo. Variáveis como sexo de uma pessoa; se uma pessoa está triste, feliz, ansiosa, etc, prever o sentimento de uma pessoa; predizer a tendencia política (direita, esquerda, centro, etc) de uma determinada pessoa, são exemplos de problema de classificação, nos quais a regressão logística se aplica.
 
 ___
-
-___
