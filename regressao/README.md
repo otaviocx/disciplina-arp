@@ -28,9 +28,9 @@ Considerando o modelo criado apenas pelos 5 primeiros e 5 últimos registros, te
 
 Como é possível observar, o EQM dos registros não utilizados no modelo permaneceu próximo ao EQM dos registros utilizados no modelo. Isso se deu visto que, ao construir o modelo com os 5 primeiros e 5 últimos registro, as diferentes tendências apresentadas para diferentes faixas etárias foram capturadas. Com isso, a regressão resultante cobre melhor também aqueles registros que não foram utilizados para a construção do modelo. O erro quadrático médio utilizando apenas os 5 primeiros e 5 últimos registros acaba sendo menor, inclusive, que quando utilizado todos os 20 registros da amostra para construção do modelo. 
 
-A Figura 1 apresenta os valores reais presentes na amostra (em azul), a regressão construída na Questão 1 (em laranjado), a regressão construída utilizando todos os registros (em cinza) e a regressão construída na Questão 2 (em amarelo). Como é possível observar, a que mais se aproxima da tendencia dos dados é aquela construida na Questão 2.
-
 ___
+
+A Figura 1 apresenta os valores reais presentes na amostra (em azul), a regressão construída na Questão 1 (em laranjado), a regressão construída utilizando todos os registros (em cinza) e a regressão construída na Questão 2 (em amarelo). Como é possível observar, a que mais se aproxima da tendencia dos dados é aquela construida na Questão 2.
 
 ![Figura 1](https://github.com/otaviocx/disciplina-arp/raw/master/regressao/grafico.png "Regressões construídas para a base de dados 'Risco de ataque cardíaco'")
 
