@@ -76,7 +76,7 @@ ___
 
 ###### Resposta Q5:
 
-Os cálculos para resolução dessa questão foram realizados em Python no script `apartamentos.py`. O valor do imóvel considerando apenas as variáveis acima é de R$ 1.030.691,91.
+Os cálculos para resolução dessa questão foram realizados em Python no script `apartamentos.py`. O valor do imóvel considerando todas as variáveis é de R$ 1.030.691,91.
 
 ___
 
