@@ -31,4 +31,4 @@ A Figura 1 apresenta os valores reais presentes na amostra (em azul), a regress�
 **
 
 image::https://github.com/otaviocx/disciplina-arp/raw/master/regressao/grafico.png[]
-**Figura 3**  Regressões construídas para a base de dados "Risco de ataque cardíaco".
+**Figura 1**  Regressões construídas para a base de dados "Risco de ataque cardíaco".
