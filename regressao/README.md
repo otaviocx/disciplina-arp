@@ -38,7 +38,7 @@ A Figura 1 apresenta os valores reais presentes na amostra (em azul), a regress�
 
 ___
 
-** Os exercícios 3, 4 e 5 referem-se a base de dados "Preços de apartamentos" ** 
+**Os exercícios 3, 4 e 5 referem-se a base de dados "Preços de apartamentos".** 
 
 *3) Qual o coeficiente de correlação entre cada uma das variáveis com o preço de apartamento? Qual a variável mais importante para explicar o preço de apartamento? Justifique sua resposta.*
 
