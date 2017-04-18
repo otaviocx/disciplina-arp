@@ -80,3 +80,48 @@ Os cálculos para resolução dessa questão foram realizados em Python no scrip
 
 ___
 
+*6) Explique com suas palavras a importância do uso da regressão no exemplo deste artigo: https://www.linkedin.com/pulse/using-regression-predict-baseball-salaries-nate-reed*
+
+###### Resposta Q6:
+
+O artigo descreve um trabalho realizado para predição de salários de jogadores de *baseball*. Ele começa tentando predizer as vitórias de um time e para isso calcula coeficientes de correlação entre as variáveis que ele tem e as vitórias do time. O modelo construído com regressão apresenta bons resultados com coeficiente de determinação (R^2) de 0.90. O modelo de predição de salários já não tem tanta eficiencia. Mesmo utilizando validação cruzada, obtem uma taxa de 0.68, utilizando 38 variáveis. Os autores então tentam utilzar algumas técnicas de regressão para redução da dimencionalidade do problema (número de variáveis). A importancia da regressão para esse problema se deu justamente nessa redução. Ao final do artigo eles conseguem reduzir para apenas 7 variáveis mantendo uma taxa de 0.64, bem próxima à inicial.
+___
+
+*7) Um portal da internet cobra anúncios na página principal de acordo com o número de visualizações diários da página. Um anunciante diz que o mais importante para ele é o número de "clicks" diários no seu anúncio. O portal preparou um estudo com dados dos últimos 30 dias. Foi observado o número de visitas únicas diárias do portal e o número de clicks diários do anúncio. O resultado do ajuste da regressão de Y(número de clicks) por X(número de visualizações) é mostrado no gráfico de dispersão a seguir.*
+
+![Figura 2](https://github.com/otaviocx/disciplina-arp/raw/master/regressao/questao7.PNG "Número de clicks X visualizações diárias.")
+
+*Assinale V ou F justificando sua resposta para as falsas:*
+
+*(a) Apenas 0,66% das visualizações resultam em clicks. Portanto, a regressão não está boa.*
+
+*(b) O número de visualizações é um bom preditor do número de clicks porque o R2 é alto e a reta parece bem ajustada.*
+
+*(c) 0,7044% das visualizações são convertidas em clicks.*
+
+*(d) As duas variáveis não estão linearmente correlacionadas porque o R2 é menor que 1.*
+
+*(e) Se num determinado dia o site tiver 10000 visualizações, o número estimado de clicks é 66.*
+ 
+###### Resposta Q7:
+
+(a) Falso. O fato de apenas aproximadamente 0,66% das visualizações resultarem em clicks não tem nada a ver com a qualidade da regressão. Na verdade a regressão está justamente mostrando essa correlação entre as variáveis. O que não está bom é a taxa de conversão de visualizações em clicks do site. Mas isso, já é um dado de domínio (não impacta na qualidade da regressão).
+
+(b) Verdadeiro. Ter um R2 de 0,70 indica que 70% da variável dependente consegue ser explicado pelo modelo de regressão linear simples. Isso indica que a veriável clicks é fortemente dependente da variável visualizações. Ou seja, a partir das visualizações conseguimos explicar razoavelmente a quantidade de clicks.
+
+(c) Falso. Esse item mistura conceitos da regressão linear com os conceitos de domínio. Como explicado no item anterior, 0,7044 é o coeficiente de determinação. Isso indica o quão bem a variável dependente (clicks) consegue ser explicada pela variável independente (visualizações).
+
+(d) Falso. A correlação linear entre as variáveis é alta, como demonstrado pelo gráfico e pelo coeficiente de determinação. Se o R2 fosse 1, a variável dependente seria deterministica e em função da independente. Com isso, ao invés de previsão, teriamos a certeza do valor. 
+
+(e) Falso. Pela equação da regressão linear dada na figura, a quantidade de clicks para 10 mil visualizações será estimada em 73,3602. Seria 66 se b0 não existisse.
+___
+
+*8) Ilustre e explique uma aplicação em que a regressão logística se apresente como mais adequada do que uma regressão linear.*
+
+###### Resposta Q8:
+
+Em aprendizagem supervisionada existem dois tipos de problemas: regressão e classificação. A regressão é um tipo de problema cujo propósito é identificar um padrão para previsão em uma variável dependente cujos valores sejam contínuos ou discretos mas que possuam ordem (variável ordinal). A este tipo de problema a regressão linear é aplicada. Qualquer variável que se deseja predizer e que não dá a ideia de classe e sim de grandeza, pode ser prevista utilizando regressão linear. Por exemplo: tamanho, valor, temperatura, etc. Os problemas que envolvem regressão logística são aqueles cujo propósito é a classificação. Ou seja, a variável dependente é discreta e não possue ordem (variável nominal). Neste tipo de problema a proposta e predizer a classe de um determinado indivíduo. Variáveis como sexo de uma pessoa; se uma pessoa está triste, feliz, ansiosa, etc, prever o sentimento de uma pessoa; predizer a tendencia política (direita, esquerda, centro, etc) de uma determinada pessoa, são exemplos de problema de classificação, nos quais a regressão logística se aplica.
+
+___
+
+___
