@@ -208,6 +208,18 @@ class NaiveBayesClassifier(object):
 
         plot.show()
 
+    def remove_zeros(self, matrix):
+        result = []
+        for vector in matrix:
+            line = []
+            for item in vector:
+                val = item
+                if val < 0.0001:
+                    val = float("NaN")
+                line.append(val)
+            result.append(line)
+        return result
+
     def plot_two_var_normal(self, vars_combination):
         """
         Método responsável por plotar a função normal (gaussiana) de duas variáveis.
@@ -245,6 +257,7 @@ class NaiveBayesClassifier(object):
             ax = fig.gca(projection='3d')
             plot.xlabel(vars_combination[0])
             plot.ylabel(vars_combination[1])
-            ax.plot_surface(y_values, x_values, z_values)
+
+            ax.plot_surface(self.remove_zeros(y_values), self.remove_zeros(x_values), self.remove_zeros(z_values))
 
         plot.show()
